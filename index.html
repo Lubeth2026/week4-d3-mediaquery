@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="app.js" defer></script>
+</head>
+<body class="min-h-[100vh] p-6">
+    <h1 class="text-2xl font-bold text-slate-800">Carousel Demo!</h1>
+    <main >
+        <div class="flex justify-between items-center">
+            <button class="bg-slate-800 px-3 py-2 rounded text-white" id="prev">Prev</button>
+            <p id="label">Slide 1</p>
+            <button class="bg-slate-800 px-3 py-2 rounded text-white" id="next">Next</button>
+        </div>
+        <!--Main part of carousel-->
+        <div class="mt-4 flex flex-col items-center">
+            <!--Slide 1-->
+            <div class="w-[30rem]" id="slide1">
+                <img class="w-full" src="cloud.avif" alt="Cloud Img">
+            </div>
+            <!--Slide 2-->
+            <div class="w-[30rem] hidden" id="slide2">
+                <img class="w-full" src="nature.avif" alt="Nature Img">
+            </div>
+            <!--Slide 3-->
+            <div class="w-[30rem] hidden" id="slide3">
+                <img class="w-full" src="rose.avif" alt="Rose Img">
+            </div>
+            <!--Slide 4-->
+            <div class="w-[30rem] hidden" id="slide4">
+                <img class="w-full" src="treePath.avif" alt="Tree Path Img">
+            </div>
+        </div>
+    </main>
+</body> 
+</html>
